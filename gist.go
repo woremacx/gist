@@ -21,7 +21,7 @@ var (
 func init() {
 	flag.StringVar(&fileName, "f", "", "gist file name")
 	flag.BoolVar(&public, "p", false, "make gist public")
-	flag.StringVar(&token, "t", os.Getenv("GITHUB_TOKEN"), "github token")
+	flag.StringVar(&token, "t", os.Getenv("GITHUB_TOKEN_FOR_GIST"), "github token")
 }
 
 type TokenSource oauth2.Token
